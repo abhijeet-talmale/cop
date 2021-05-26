@@ -1,0 +1,52 @@
+
+public class TestEmployee {
+
+	public static void main(String[] args) {
+		int[] arr=new int[5];
+	     arr[0]=10;
+	     //UDT-ref type
+	     //can i create array of IacsdEmployee
+	     Employee[] allEmps=new Employee[5];
+	     
+	     
+	     
+	     Employee emp1=new Employee("Vaishali",78955);
+	     Employee emp2=new Employee("Sonali",459000);
+	     Employee emp3=new Employee("Priti",454000);
+	     Employee emp4=new Employee("Snehal",40000);
+	     Employee emp5=new Employee("Pratiksha",2000);
+	     
+	     allEmps[0]=emp1;
+	     allEmps[1]=emp2;
+	     allEmps[2]=emp3;
+	     allEmps[3]=emp4;
+	     allEmps[4]=emp5;
+	     
+	     System.out.println("------------------");
+	    for(int i=0;i<allEmps.length;i++)
+	    {
+	    	allEmps[i].display();
+	    	
+	    }
+	    
+	    //for each
+	    
+	    for(Employee emp:allEmps)
+	    {
+	    	emp.display();
+	    }
+	    for(int i=0; i<allEmps.length; i++)
+		{	
+			if(allEmps[i].getSalary()>20000)
+			{
+				System.out.println(allEmps[i].getEmpid()+"\t"+allEmps[i].getName());
+				System.out.println("");
+			}
+		}
+	    	
+	    	
+	    
+
+	}
+
+}

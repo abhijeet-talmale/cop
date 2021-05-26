@@ -1,0 +1,41 @@
+public class TestDate {
+
+	/*public static void main(String[] args) {
+		Date d1 = new Date();
+		d1.setDd(11);
+		d1.setMm(11);
+		d1.setYy(2011);
+		System.out.print("My BirthDate using mutators ans accessors:\t");
+		System.out.println(d1.getDd()+"—"+d1.getMm()+"—"+d1.getYy());
+		
+		System.out.println("");
+		Date d2 = new Date();
+		
+		System.out.println("");
+		Date d3 = new Date(22,12,2022);
+	}*/
+	
+	public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter value of X");
+        int X = sc.nextInt();
+        System.out.println("Enter value of Y");
+        int Y = sc.nextInt();
+        if(X<Y){
+          System.out.println("X is less than Y");
+        }
+        else if(X>Y){
+          System.out.println("X is greater than Y");
+        }
+        else{
+        
+           System.out.println("X is equal to Y");
+        }
+        
+  
+  
+  }
+
+}

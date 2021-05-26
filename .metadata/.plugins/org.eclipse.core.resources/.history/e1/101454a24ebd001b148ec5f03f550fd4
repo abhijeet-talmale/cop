@@ -1,0 +1,31 @@
+import java.io.*;
+import java.util.Scanner;
+public class Str {
+	
+	String[] str =new String[1];
+	Scanner sc = new Scanner(System.in);
+    public void data() {
+    	
+    	System.out.println(str);
+    	for (int i = 0; i < str.length; i++) {
+			str[i]=sc.next();
+		}
+    	for (int i = 0; i < str.length; i++) {
+			System.out.println(str[i]);
+		}
+    	
+    	for (int i = str.length-1; i >= 0; i--) {
+			System.out.println(str[i]);
+		}
+    	
+    }
+	
+
+	public static void main(java.lang.String[] args) {
+		
+		Str str = new Str();
+		str.data();
+
+	}
+
+}
